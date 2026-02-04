@@ -1,0 +1,96 @@
+#Order img,#Orderd img{vertical-align:middle;}
+#c{width:99%;height:98px;background-color:#e6f8c2;border:1px solid #FFFFFF;margin:0 auto;margin-bottom:10px;border-radius:4px;color:#4d7200;text-align:center;font-size:20px;line-height:100px;}
+#d{width:99%;height:98px;background-color:#FFFFFF;border:1px solid #FFFFFF;margin:0 auto;margin-bottom:10px;border-radius:4px;color:#FFFFFF;text-align:center;font-size:20px;line-height:100px;}
+
+.hd img{width:100%}
+.hd_tit{height: 50px;
+    line-height: 50px;
+    background: #0099CC;
+    margin-top: 15px;
+    border: 1px solid #FFFFFF;
+    border-bottom: 0;}
+.bd{background:#FFFFFF;padding:10px;border-radius:4px;
+border:1px solid #FFFFFF;
+border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.bc{font-size:14px;}
+.gnbt{
+height: 40px;
+    line-height: 40px;
+    background: #0099CC;
+    color:  #FFFFFF;
+    text-indent: 10px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+	border-bottom: 1px solid #ddd;
+	border:1px solid #ddd;
+	font-weight:bold;
+	font-size:16px;
+}
+.ft{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background: #0099CC;
+    color: #fff;
+    line-height: 40px;
+	border-radius:4px;
+	margin-top:10px;
+}
+.kua{
+    position: relative;
+    line-height: 22px;
+    background-color: #0099CC;
+}
+.kua .nav{
+    height: 1.5pc;
+    width: 95%;
+    margin: 0 auto;
+}
+.kua .nav li{
+font-size:.6pc;
+color: #FFFFFF;
+    float: left;
+	margin-right:20px;
+}
+.kua .nav li a{
+	position: relative;
+    display: inherit;
+    padding: 0;
+	color:#FFFFFF;
+}
+.kua .nav li a:hover{
+    background: none;
+	color:#adb2c7;
+}
+.ft a{color:#FFFFFF;}
+.weui-footer__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .62em;
+    position: relative;
+    font-size: 14px;
+}
+.weui-footer__link:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+    left: -0.65em;
+    top: .36em;
+    bottom: .36em;
+}
+.weui-footer__link:first-child:before {
+    display: none;
+}
+.sel{padding:6px 0;}
