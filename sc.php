@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -70,8 +70,8 @@ function  create() {
         alert("ID或跳转地址不能为空！");
         return false;
     }
-    kd.href = 'https://www.youxuanma.cn/?id='+myid.value+'&url='+url.value; //修改此处的域名 必须要SSL证书    kd.style = ''; 
-    kd.innerText = 'https://www.youxuanma.cn/?id='+myid.value+'&url='+url.value; 
+    kd.href = 'https://您的域名/?id='+myid.value+'&url='+url.value; //修改此处的域名 必须要SSL证书    kd.style = ''; 
+    kd.innerText = 'https://您的域名/?id='+myid.value+'&url='+url.value; 
 }
 </script>
 <div id="bob">
@@ -84,7 +84,7 @@ function  create() {
 	<div id="content">
 	<div class="hd">
 	
-	<a href="https://您的域名/"><img src="images/luyuz.png"></div></a>
+	<a href="https://您的域名/"><img src="images/luzuz.jpg"></div></a>
 	<div class="mall" id="contentss">
 
 <div class="mianban">
@@ -102,7 +102,7 @@ function  create() {
 						<li>
 						<input type="text" class="form-control" id="myid" placeholder="输入对方QQ，生成链接" value>
                         <p>拍摄后跳转到：</p>
-                        <input type="text" class="form-control" id="url" value="http://qq.com">
+                        <input type="text" class="form-control" id="url" value="https://baidu.com">
 						</li>
 						<li>
 						<input type="button" value="生成链接" onclick="create();" style="display: block;background: #0099CC!important;height: 40px;font-size: 16px;color: #fff;border-radius: 4px;text-align: center;overflow: hidden;"> <br>   
@@ -122,8 +122,8 @@ function  create() {
                         <li class="btn_purchase">
 						
 					
-    <a href="http://apiqq.i0x0.cn/dh/" id="M1" style="background-color: rgb(0, 153, 204);">免费查Q绑</a>
-    <a href="https://jq.qq.com/?_wv=1027&k=gLRs9zYk" id="M1" style="background-color: rgb(0, 153, 204);">点击加入群聊</a>
+    <a href="null" id="M1" style="background-color: rgb(0, 153, 204);">等待添加</a>
+    <a href="null" id="M1" style="background-color: rgb(0, 153, 204);">等待添加</a>
                     
                         </li>
 						  
@@ -170,11 +170,7 @@ function  create() {
     	                <p>常用链接:</p>
                <div width="100px" height="100px" style=" margin: 10px auto; border: 1px solid #ccc; text-align: center">
                	
-               	<a href="http://apiqq.i0x0.cn/dh/" id="M1" style="background-color: #af00ff;">免费查绑</a> 
-                 	<a href="https://www.youxuanma.cn/" id="M1" style="background-color: #af00ff;">源码下载第一选择-优选源码库</a>
-                 <a href="http://www.wcxga.cn/" id="M1" style="background-color: #af00ff;">微胖课堂-网赚必选</a>
-                     <a href="http://www.zwxmk.cn/" id="M1" style="background-color: #af00ff;">小唯资源</a>
-                 		
+               	<a href="https://baidu.com" id="M1" style="background-color: #af00ff;">百度</a> 
                	</div>
     	
     </div>
