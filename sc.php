@@ -84,7 +84,7 @@ function  create() {
 	<div id="content">
 	<div class="hd">
 	
-	<a href="https://www.youxuanma.cn/"><img src="images/luyuz.png"></div></a>
+	<a href="https://您的域名/"><img src="images/luyuz.png"></div></a>
 	<div class="mall" id="contentss">
 
 <div class="mianban">
