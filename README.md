@@ -90,7 +90,7 @@ chmod 777 img
 
 ```php
 // 原代码
-kd.href = 'https://www.youxuanma.cn/?id='+myid.value+'&url='+url.value;
+kd.href = 'https://您的域名/?id='+myid.value+'&url='+url.value;
 
 // 修改为您的域名
 kd.href = 'https://您的域名/?id='+myid.value+'&url='+url.value;
@@ -378,14 +378,13 @@ chmod 777 img
 ## 联系方式
 
 如有问题或建议，请通过以下方式联系：
-- 邮箱：[您的邮箱]
-- QQ：[您的QQ]
-- GitHub Issues：[项目地址]
+- 邮箱：3454865121@qq.com
+- QQ：1895145
 
 ---
 
-**最后更新：** 2024年  
+**最后更新：** 2024年2月4日  
 **版本：** 1.0  
-**作者：** 优选源码库
+**作者：** 童年
 
 **重要声明：本项目仅供学习交流使用，禁止用于任何非法目的！**
