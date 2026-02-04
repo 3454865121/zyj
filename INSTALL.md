@@ -48,14 +48,14 @@
 #### 步骤2：创建网站
 
 1. 点击"网站" → "添加站点"
-2. 填写域名（例如 `zhaoyaojing.com`）
+2. 填写域名（例如 `www.zyj.coom`）
 3. 选择PHP版本（建议7.4或以上）
 4. 点击"提交"
 
 #### 步骤3：上传项目文件
 
 1. 点击"文件"进入文件管理器
-2. 导航到网站根目录（通常为 `/www/wwwroot/zhaoyaojing.com/`）
+2. 导航到网站根目录（通常为 `/www/wwwroot/您的域名/`）
 3. 上传照妖镜项目文件
 4. 解压文件（如果是压缩包）
 
@@ -81,7 +81,7 @@
 
 在浏览器中访问：
 ```
-https://zhaoyaojing.com/sc.php
+https://您的域名/sc.php
 ```
 
 ### 方法2：使用命令行部署
@@ -126,14 +126,14 @@ scp -r 照妖镜/ root@您的服务器IP:/var/www/html/
 
 # 或使用git克隆
 cd /var/www/html
-git clone https://github.com/您的用户名/zhaoyaojing.git
+git clone https://github.com/3454865121/zyj.git
 ```
 
 #### 步骤4：设置目录权限
 
 ```bash
 # 进入项目目录
-cd /var/www/html/zhaoyaojing
+cd /var/www/html/zyj
 
 # 创建img目录
 mkdir -p img
@@ -147,17 +147,17 @@ chmod 755 *.php
 
 创建配置文件：
 ```bash
-sudo nano /etc/apache2/sites-available/zhaoyaojing.conf
+sudo nano /etc/apache2/sites-available/zyj.conf
 ```
 
 添加以下内容：
 ```apache
 <VirtualHost *:80>
-    ServerName zhaoyaojing.com
-    ServerAlias www.zhaoyaojing.com
-    DocumentRoot /var/www/html/zhaoyaojing
+    ServerName 您的域名
+    ServerAlias 您的域名
+    DocumentRoot /var/www/html/zyj
     
-    <Directory /var/www/html/zhaoyaojing>
+    <Directory /var/www/html/zyj>
         Options Indexes FollowSymLinks
         AllowOverride All
         Require all granted
@@ -170,15 +170,15 @@ sudo nano /etc/apache2/sites-available/zhaoyaojing.conf
 </VirtualHost>
 
 <VirtualHost *:443>
-    ServerName zhaoyaojing.com
-    ServerAlias www.zhaoyaojing.com
-    DocumentRoot /var/www/html/zhaoyaojing
+    ServerName 您的域名
+    ServerAlias 您的域名
+    DocumentRoot /var/www/html/zyj
     
     SSLEngine on
     SSLCertificateFile /path/to/certificate.crt
     SSLCertificateKeyFile /path/to/private.key
     
-    <Directory /var/www/html/zhaoyaojing>
+    <Directory /var/www/html/zyj>
         Options Indexes FollowSymLinks
         AllowOverride All
         Require all granted
@@ -188,7 +188,7 @@ sudo nano /etc/apache2/sites-available/zhaoyaojing.conf
 
 启用配置：
 ```bash
-sudo a2ensite zhaoyaojing.conf
+sudo a2ensite zyj.conf
 sudo a2enmod ssl
 sudo a2enmod rewrite
 sudo systemctl restart apache2
@@ -202,7 +202,7 @@ sudo systemctl restart apache2
 sudo apt install certbot python3-certbot-apache -y
 
 # 申请证书
-sudo certbot certonly --apache -d zhaoyaojing.com -d www.zhaoyaojing.com
+sudo certbot certonly --apache -d 您的域名 -d 您的域名
 
 # 自动续期
 sudo systemctl enable certbot.timer
@@ -218,7 +218,7 @@ sudo systemctl status apache2
 php -v
 
 # 测试连接
-curl -I https://zhaoyaojing.com/sc.php
+curl -I https://您的域名/sc.php
 ```
 
 ---
@@ -241,7 +241,7 @@ curl -I https://zhaoyaojing.com/sc.php
 
 #### 步骤3：上传项目文件
 
-1. 将照妖镜项目文件复制到 `C:\xampp\htdocs\zhaoyaojing\`
+1. 将照妖镜项目文件复制到 `C:\xampp\htdocs\zyj\`
 2. 创建 `img` 文件夹（如果不存在）
 
 #### 步骤4：设置文件夹权限
@@ -256,7 +256,7 @@ curl -I https://zhaoyaojing.com/sc.php
 
 在浏览器中访问：
 ```
-http://localhost/zhaoyaojing/sc.php
+http://localhost/您的域名/sc.php
 ```
 
 **注意：** 本地测试时可以使用HTTP，但部署到生产环境必须使用HTTPS。
@@ -273,7 +273,7 @@ http://localhost/zhaoyaojing/sc.php
 1. 打开PHPStudy
 2. 点击"网站" → "添加网站"
 3. 填写网站信息：
-   - 网站名称：zhaoyaojing
+   - 网站名称：照妖镜
    - 网站域名：localhost
    - 网站路径：选择项目文件夹
 4. 点击"保存"
@@ -472,7 +472,7 @@ gzip_min_length 1000;
 crontab -e
 
 # 添加以下行（每天凌晨2点执行）
-0 2 * * * find /var/www/html/zhaoyaojing/img -type f -mtime +7 -delete
+0 2 * * * find /var/www/html/zyj/img -type f -mtime +7 -delete
 ```
 
 ### 4. 使用CDN加速
@@ -484,7 +484,7 @@ crontab -e
 <link href="css/style.css" rel="stylesheet">
 
 // 使用CDN
-<link href="https://cdn.example.com/zhaoyaojing/css/style.css" rel="stylesheet">
+<link href="https://cdn.example.com/zyj/css/style.css" rel="stylesheet">
 ```
 
 ### 5. 优化图片
@@ -532,10 +532,10 @@ find img -type f -exec ls -lh {} \; | sort -k5 -hr | head -10
 
 ```bash
 # 备份整个项目
-tar -czf zhaoyaojing_backup_$(date +%Y%m%d).tar.gz zhaoyaojing/
+tar -czf zyj_backup_$(date +%Y%m%d).tar.gz zyj/
 
 # 仅备份照片
-tar -czf zhaoyaojing_photos_$(date +%Y%m%d).tar.gz zhaoyaojing/img/
+tar -czf zyj_photos_$(date +%Y%m%d).tar.gz zyj/img/
 ```
 
 ---
